@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="payment-container">
+
+<h1>Complete Your Registration</h1>
+
+<h2>Workshop Fee: ₹1500</h2>
+
+<p>Please scan the QR code below using Google Pay, PhonePe, Paytm or any UPI App.</p>
+
+<div class="qr-box">
+    <img src="c:\Users\user\Downloads\WhatsApp Image 2026-06-15 at 5.57.35 PM.jpeg" alt="GPay QR Code">
+</div>
+
+<div class="payment-info">
+    <h3>Payment Details</h3>
+    <p><strong>Fee:</strong> ₹1500</p>
+    <p><strong>Camp:</strong> Summer Dance & Drama Camp 2026</p>
+</div>
+
+<form id="paymentForm">
+
+<input type="text" placeholder="Student Name" required>
+
+<input type="text" placeholder="UPI Transaction ID" required>
+
+<button type="submit">Submit Payment Details</button>
+
+</form>
+
+<div id="paymentSuccess"></div>
+
+</div>
+
+<script>
+document.getElementById("paymentForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+document.getElementById("paymentSuccess").innerHTML =
+"✅ Payment Details Submitted Successfully! Your registration is confirmed.";
+
+this.reset();
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camp Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+
+<h1>Summer Dance & Drama Camp Registration</h1>
+
+<form id="campForm">
+
+<h2>1. Student Details</h2>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="date" required>
+
+<div class="row">
+<input type="number" placeholder="Age" required>
+<input type="text" placeholder="Gender">
+</div>
+
+<div class="row">
+<input type="text" placeholder="Class / Profession">
+<input type="text" placeholder="School / College Name">
+</div>
+
+<h2>2. Parent / Guardian Details</h2>
+
+<input type="text" placeholder="Father's Name">
+
+<input type="text" placeholder="Mother's Name">
+
+<div class="row">
+<input type="tel" placeholder="Contact Number 1" required>
+<input type="tel" placeholder="Contact Number 2">
+</div>
+
+<textarea placeholder="Address"></textarea>
+
+<h2>3. Workshop Information</h2>
+
+<label>Interested In:</label>
+
+<div class="checkboxes">
+<label><input type="checkbox"> Dance</label>
+<label><input type="checkbox"> Drama</label>
+<label><input type="checkbox"> Both</label>
+</div>
+
+<label>Experience Level:</label>
+
+<div class="checkboxes">
+<label><input type="radio" name="level"> Beginner</label>
+<label><input type="radio" name="level"> Intermediate</label>
+<label><input type="radio" name="level"> Advanced</label>
+</div>
+
+<textarea placeholder="Medical Issues (if any)"></textarea>
+
+<h2>4. Fee Details</h2>
+
+<input type="text" value="₹1500" readonly>
+
+<div class="checkboxes">
+<label><input type="radio" name="payment"> Cash</label>
+<label><input type="radio" name="payment"> UPI</label>
+<label><input type="radio" name="payment"> Bank Transfer</label>
+</div>
+
+<select required>
+<option>Select Venue</option>
+<option>Rupai</option>
+<option>Doomdooma</option>
+</select>
+
+<br><br>
+
+<button type="button" onclick="window.location.href='payment.html'">
+Proceed to Payment
+</button>
+
+</form>
+
+<div id="successMessage"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
